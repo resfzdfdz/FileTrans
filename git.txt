@@ -1,0 +1,24 @@
+要上传之前，要先在github上建一个repository
+
+git init:							新建本地仓库
+git add SM4.c:						加入文件
+git commit -m "message":			提交
+
+git remote add origin git@github.com:resfzdfdz/de.git:		de是先前建的仓库名称
+
+git push -u origin master:			创建master分支
+
+git branch:							查看所有分支
+git checkout -b test_pattern:		创建新分支并转到该分支（并且master的文件自动复制到新分支中）
+git checkout test_pattern:			转换到test_pattern分支
+
+git push origin test_pattern:		向test_pattern分支上传文件
+
+git merge test_pattern:				把test_pattern分支合并到master分支
+
+git branch -d test_pattern:			删除本地分支test_pattern
+git push --delete test_pattern:		删除远程分支test_pattern
+
+git rm Test_Pattern.txt:			删除本地文件Test_Pattern.txt
+git rm --cached Test_Pattern.txt:	删除远程文件Test_Pattern.txt
+(之后还要用git commit和git push进行操作)
